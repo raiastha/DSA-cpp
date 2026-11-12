@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+class animal{
+    public:
+    void speak(){
+        cout<<"speakiing"<<endl;
+    }
+};
+
+class dog:public animal{
+    public:
+    // void speak(){
+    //     cout<<"barking"<<endl;
+    // }
+};
+
+int main(){
+    dog d;
+    d.speak();
+    return 0;
+}
